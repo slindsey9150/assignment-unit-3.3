@@ -78,14 +78,14 @@ let stretchNegatives = [];
 let stretchPositives = [];
 let stretchZeroes = [];
 for (let number of supplyChanges) {
-  if (supplyChanges[number] > 0) {
-    stretchPositives.push(supplyChanges[number])
+  if (number > 0) {
+    stretchPositives.push(number)
   }
-  else if (supplyChanges[number] === 0) {
-    stretchZeroes.push(supplyChanges[number])
+  else if (number === 0) {
+    stretchZeroes.push(number)
   }
-  else if (supplyChanges[number] < 0) {
-    stretchNegatives.push(supplyChanges[number])
+   else{
+    stretchNegatives.push(number)
   }
 }
 console.log('stretchPositives', stretchPositives);
