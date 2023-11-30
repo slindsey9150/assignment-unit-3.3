@@ -118,10 +118,13 @@ let parts = 572
 let boxesFilled = 0
 console.log('parts', parts);
 console.log('boxesFilled', boxesFilled);
-while (parts > 5) {
-  boxesFilled += 1 / 7
-  parts--
+
+while (parts >= 7) {
+  boxesFilled += 1 
+  parts -= 7
+
 }
+
 console.log('boxesFilled', boxesFilled);
 console.log('parts', parts);
 // DO NOT MODIFY
